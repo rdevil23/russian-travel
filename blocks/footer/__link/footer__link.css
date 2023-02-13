@@ -2,7 +2,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 112%;
+  line-height: 1.12;
   color: #fff;
   text-decoration: none;
   transition: 0.1s ease-in-out;
@@ -12,9 +12,9 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .footer__link {
     font-size: 24px;
-    line-height: 100%;
+    line-height: 1;
   }
 }

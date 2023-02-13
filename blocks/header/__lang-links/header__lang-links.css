@@ -1,11 +1,11 @@
 .header__lang-links {
-  display: flex;
   list-style: none;
+  display: flex;
   padding: 18px 0 6px;
   margin: 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .header__lang-links {
     padding: 14px 0 8px;
   }

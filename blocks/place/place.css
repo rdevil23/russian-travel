@@ -1,45 +1,34 @@
 .place {
-  max-width: 984px;
-  margin: 0 0 80px 0;
+  padding: 0 0 80px;
+  margin: 0;
   display: grid;
   gap: 48px 40px;
-  grid-template-columns: 2fr;
-  grid-template-rows: 3fr;
-  grid-template-areas:
-    'place__title place__website'
-    'place__image place__paragraphs'
-    'place__image place__paragraphs';
+  grid-template-columns: minmax(320px, 460px) minmax(288px, 1fr);
 }
 
 .place:last-of-type {
-  margin: 0;
+  padding: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .place {
-    gap: 48px 32px;
+    column-gap: 32px;
+    grid-template-columns: 440px 1fr;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .place {
-    gap: 48px 28px;
-    margin-bottom: 73px;
+    padding: 0 0 73px;
+    column-gap: 28px;
+    grid-template-columns: 340px 1fr;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .place {
-    margin-bottom: 18px;
-    gap: 32px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr;
-    grid-template-areas:
-      'place__title'
-      'place__website'
-      'place__image'
-      'place__image'
-      'place__paragraphs'
-      'place__paragraphs';
+    padding: 0 0 50px;
+    row-gap: 32px;
+    grid-template-columns: minmax(288px, 1fr);
   }
 }

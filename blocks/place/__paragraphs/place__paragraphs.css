@@ -1,22 +1,9 @@
 .place__paragraphs {
-  margin: 0;
   padding: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .place__paragraphs {
-    max-width: 456px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .place__paragraphs {
-    max-width: 352px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .place__paragraphs {
-    max-width: 288px;
+    padding: 0 16px;
   }
 }

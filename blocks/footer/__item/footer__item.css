@@ -1,20 +1,14 @@
 .footer__item {
-  padding-right: 18px;
+  margin: 0;
+  padding: 0 18px 0 0;
 }
 
 .footer__item:last-of-type {
-  padding-right: 0;
+  padding: 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .footer__item {
-    align-self: flex-start;
-    font-size: 24px;
-    line-height: 100%;
-    margin: 0;
-    margin-bottom: 32px;
-  }
-  .footer__item:last-of-type {
-    margin-bottom: 48px;
+    padding: 0 0 32px;
   }
 }
