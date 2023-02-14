@@ -21,8 +21,8 @@
   <header class="header">
     <img class="header__logo" src="./images/logo/logo.svg" alt="Карта россии">
     <ul class="header__lang-links">
-      <li><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
-      <li><a class="header__lang-link" href="#">En</a></li>
+      <li class="header__lang-link"><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
+      <li class="header__lang-link"><a class="header__lang-link" href="#">En</a></li>
     </ul>
   </header>
 
@@ -56,19 +56,22 @@
       </ul>
     </section>
 
-    <section class="photo-grid" aria-label="Фотогалерея">
-      <img class="photo-grid__item" src="./images/grid-imgs/train.jpg" alt="Вид из окна поезда">
-      <img class="photo-grid__item" src="./images/grid-imgs/mountain.jpg" alt="Горы в облаках">
-      <img class="photo-grid__item" src="./images/grid-imgs/tuman.jpg" alt="Собака на копне сена">
-      <img class="photo-grid__item" src="./images/grid-imgs/sochi.jpg" alt="Лес в тумане">
-      <img class="photo-grid__item" src="./images/grid-imgs/wheel.jpg" alt="Колесо машины на льду">
-      <img class="photo-grid__item" src="./images/grid-imgs/baikal.jpg" alt="Вид на горы с озера Байкал">
-      <img class="photo-grid__item" src="./images/grid-imgs/elbrus.jpg" alt="Гора Эльбрус">
-      <img class="photo-grid__item" src="./images/grid-imgs/sign.jpg" alt="Дорожный знак">
-      <img class="photo-grid__item" src="./images/grid-imgs/kamchatka.jpg" alt="Горы Камчатки в тумане">
-      <img class="photo-grid__item" src="./images/grid-imgs/kamchatka2.jpg" alt="Авачинский вулкан на Камчатке">
-      <img class="photo-grid__item" src="./images/grid-imgs/baikal2.jpg" alt="Мыс Хобой на озере Байкал">
-      <img class="photo-grid__item" src="./images/grid-imgs/ergaki.jpg" alt="Горные системы и хребты Ергаки">
+    <section aria-label="Фотогалерея">
+      <ul class="photo-grid">
+        <li><img class="photo-grid__item" src="./images/grid-imgs/train.jpg" alt="Вид из окна поезда"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/mountain.jpg" alt="Горы в облаках"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/tuman.jpg" alt="Собака на копне сена"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/sochi.jpg" alt="Лес в тумане"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/wheel.jpg" alt="Колесо машины на льду"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/baikal.jpg" alt="Вид на горы с озера Байкал"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/elbrus.jpg" alt="Гора Эльбрус"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/sign.jpg" alt="Дорожный знак"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/kamchatka.jpg" alt="Горы Камчатки в тумане"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/kamchatka2.jpg" alt="Авачинский вулкан на Камчатке">
+        </li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/baikal2.jpg" alt="Мыс Хобой на озере Байкал"></li>
+        <li><img class="photo-grid__item" src="./images/grid-imgs/ergaki.jpg" alt="Горные системы и хребты Ергаки"></li>
+      </ul>
     </section>
 
     <section class="places">
@@ -179,7 +182,7 @@
 
     <section class="cover">
       <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
-        <img class="cover__img" src="./images/background.jpg" alt="">
+        <!-- <img class="cover__img" src="./images/background.jpg" alt=""> -->
         <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
         <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на
           электричках.</p>
@@ -191,13 +194,13 @@
     <nav class="footer__nav">
       <ul class="footer__links">
         <li class="footer__item">
+          <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
+        </li>
+        <li class="footer__item">
           <a class="footer__link" href="https://yandex.ru/pogoda/" target="_blank">Погода</a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://rasp.yandex.ru/" target="_blank">Расписание</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://calendar.yandex.ru/" target="_blank">Календарь</a>

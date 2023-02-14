@@ -6,6 +6,11 @@
   line-height: 1.17;
   color: #fff;
   text-decoration: none;
+  margin-right: 18px;
+}
+
+.header__lang-link:last-of-type {
+  margin-right: 0;
 }
 
 .header__lang-link:hover {
